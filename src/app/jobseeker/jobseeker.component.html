@@ -1,0 +1,97 @@
+<div class="panel-header panel-header-sm">
+</div>
+
+<div class="main-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title"><span>Job Seeker Detail</span></h4>
+            <!-- <h4 class="card-title"> Simple Table</h4> -->
+          </div>
+          <div class="card-body">
+            <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input name="email" readonly id="email" type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="forms.email">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" readonly class="form-control" placeholder="First Name" name="firstName" [(ngModel)]="forms.firstName">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" readonly class="form-control" placeholder="Last Name" name="lastName" [(ngModel)]="forms.lastName">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" readonly class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Qualification</label>
+                        <input type="text" readonly class="form-control" placeholder="Qualification" name="qualification" [(ngModel)]="forms.qualification">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" readonly class="form-control" placeholder="nationality" name="nationality" [(ngModel)]="forms.nationality">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" readonly class="form-control" placeholder="Phone" name="phone" [(ngModel)]="forms.phone">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>Gender</label>
+                        <input type="text" readonly class="form-control" placeholder="Gender" name="gender" [(ngModel)]="forms.gender">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Current Job</label>
+                        <input type="text" readonly class="form-control" placeholder="Current Job" name="currentJob" [(ngModel)]="forms.currentJob">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Year Of Experiance</label>
+                        <input type="text" readonly class="form-control" placeholder="Year Of Experiance" name="yearOfExp" [(ngModel)]="forms.yearOfExp">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>About Me</label>
+                        <textarea rows="4" cols="80" readonly class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

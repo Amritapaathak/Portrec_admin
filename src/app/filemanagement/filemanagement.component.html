@@ -1,0 +1,84 @@
+<div class="panel-header panel-header-sm">
+</div>
+<!-- <div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Users List</h5>
+         
+        </div>
+        <div class="card-body all-icons">
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"><span (click)="jobSeeker(1)">Jobseeker </span><span>/</span><span (click)="Employer(2)"> Employer</span></h4>
+          <!-- <h4 class="card-title"> Simple Table</h4> -->
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                  Email
+                </th>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Company Name
+                </th>
+                <th>
+                  Location
+                </th>
+                <th>
+                  Phone
+                </th>
+                <th>
+                  Action
+                </th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of userlist; let i =index">
+                  <td>
+                    {{item.email}}
+                  </td>
+                  <td>
+                    {{item.firstName}} {{item.lastName}}
+                  </td>
+                  <td>
+                    {{item.companyName}}
+                  </td>
+                  <td>
+                    {{item.location}}
+                  </td>
+                  <td>
+                    {{item.phone}}
+                  </td>
+                  <td>
+                    <!-- <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> -->
+                      <span (click)="editData(item._id)">edit </span><span>/</span><span (click)="deleteData(item._id)"> delete</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
